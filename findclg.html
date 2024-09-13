@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Navigator</title>
+    <link rel="stylesheet" href="findclg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Dream College</h1>
+        <label for="exam">Select Exam:</label>
+        <select id="exam">
+            <option value="cet">CET</option>
+            <option value="neet">NEET</option>
+            <option value="jee">JEE</option>
+        </select>
+        
+        <label for="percentile">Enter Percentile:</label>
+        <input type="number" id="percentile" placeholder="Enter your percentile" step="0.01" min="0" max="100">
+        
+        <button onclick="findColleges()">Find Colleges</button>
+        
+        <div id="college-list"></div>
+    </div>
+    <script src="findclg.js"></script>
+</body>
+</html>
